@@ -1,0 +1,220 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #efefef;
+}
+header .brand-div {
+  justify-items: center;
+  grid-template-columns: 1fr;
+  height: 128px;
+  border-bottom: 1px solid #eceaea;
+  display: grid;
+  align-items: center;
+}
+header .container {
+  background-color: white;
+  min-height: 148px;
+  width: 80%;
+  margin: auto;
+}
+
+/* nav and menu  */
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 12px 0;
+}
+
+nav ul li{
+  display: inline-block;
+}
+nav ul a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #353535;
+  padding: 0 10px;
+}
+
+/* Product section */
+#featuredproducts {
+  padding-top: 38px;
+}
+
+#featuredproducts .container{
+  max-width: 80%;
+  background-color: white;
+  margin: auto;
+  padding: 31px 33px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  grid-gap: 52px 0;
+}
+
+#featuredproducts .container .card{
+  border: 1px solid #e2e2e2;
+  width: 75%;
+}
+
+#featuredproducts .container .card .prodimg{
+  width: 100%;
+}
+
+.card .cardcontent{
+  padding: 10px 15px;
+  text-align: center;
+}
+.card .cardcontent .price{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card .cardcontent img{
+  margin: 5px 0;
+}
+.card .cardcontent .addtocart{
+  display: inline-block;
+  background-color: #1b1a1a;
+  color: white;
+  text-decoration: none;
+  padding: 10px 17px;
+  font-size: 18px;
+  margin-top: 8px;
+} 
+
+/* contact us section */
+
+#contactus .container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: auto;
+  max-width: 80%;
+  background-color: wheat;
+}
+#contactus .container .googlemapimg {
+  overflow: hidden;
+  text-align: center;
+  padding: 44px 39px;
+}
+#contactus .container .googlemapimg img{
+  width: 90%;
+  border: 2px solid #d4c9c9;
+}
+#contactus .container .contactform {
+  background-color: #f7f7f7;
+  padding-left: 20px;
+}
+
+.contactform .contactHdr {
+  background-color: #f7f7f7;
+  font-size: 29px;
+  color: #989898;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.contactform .toplabel {
+  width: 112px;
+  display: inline-block;
+  text-align: right;
+}
+
+.contactform form .groupdiv {
+  padding-bottom: 12px;
+}
+.contactform form input {
+  border: 1px solid gray;
+  height: 26px;
+  border-radius: 4px;
+  padding-left: 6px;
+  background-color: #fffffc;
+  font-size: 16px;
+  color: #4b4e4e;
+}
+
+.contactform form .btnDiv{
+ display: grid;
+ grid-template-columns: 1fr;
+ justify-items: center;
+}
+
+.contactform form .btnDiv button{
+  width: 40%;
+}
+
+/* footer  */
+footer{
+  height: 120px;
+  background-color: teal;
+}
+
+/* Smartphone  */
+@media (max-width:500px){
+
+  #featuredproducts .container{
+    max-width: 100%;
+    background-color: white;
+    margin: auto;
+    padding: 31px 33px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 52px 0;
+  }
+
+  #contactus .container{
+    display: grid;
+    grid-template-columns:1fr;
+    margin: auto;
+    max-width: 80%;
+    background-color: wheat;
+  }
+
+  #contactus .container .googlemapimg {
+    display: none;
+  }
+
+}
+
+/* tablet  */
+@media (min-width:501px) and (max-width:768px){
+
+  #featuredproducts .container{
+    max-width: 90%;
+    background-color: white;
+    margin: auto;
+    padding: 31px 33px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    grid-gap: 52px 0;
+  }
+
+  #contactus .container{
+    display: grid;
+    grid-template-columns:1fr;
+    margin: auto;
+    max-width: 80%;
+    background-color: wheat;
+  }
+
+}
+
+/* normal  */
+@media (min-width:769px) and (max-width:1200px){
+
+
+
+
+}
+
+/* large screen  */
+@media (min-width:1201px){
+ 
+
+}
